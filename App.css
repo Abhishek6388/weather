@@ -1,0 +1,116 @@
+.App {
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body{
+  overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.mainDiv{
+  width: 100vw;
+}
+.newsImg{
+  width: 100vw;
+  height: 340px;
+  object-fit: cover;
+}
+
+.contentDiv{
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  position: relative;
+  margin-top: -20px;
+  min-height: calc(100vh - 320px);
+  box-shadow: 0 -7px 10px 0 rgba(0,0,0,0.3);
+  padding: 15px;
+}
+.contentDiv h3{
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+.contentDiv .cta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contentDiv .cta span{
+  padding: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 50px;
+  background: #ccc;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.contentDiv .cta span img{
+  width: 25px;
+  height: 25px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+.contentDiv p{
+  margin-top: 20px;
+  font-size: 14px;
+}
+select#news {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 30%);
+  position: fixed;
+  bottom: 10px;
+  z-index: 99;
+  background: #fff;
+  width: 90%;
+  height: 36px;
+  margin-left: 5%;
+  border-radius: 8px;
+}
